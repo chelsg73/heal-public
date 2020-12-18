@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153394354-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-153394354-1');
+      // gtag('event', 'Outbound URL');
+    </script>
+    <!-- END GA Code-->
+
+    <!--tracker-->
+    <script>
+    /**
+    * Function that captures a click on an outbound link in Analytics.
+    * This function takes a valid URL string as an argument, and uses that URL string
+    * as the event label. Setting the transport method to 'beacon' lets the hit be sent
+    * using 'navigator.sendBeacon' in browser that support it.
+    */
+      var captureOutboundLink = function(url){
+        gtag('event', 'click', {
+          'event_category' : 'outbound',
+          'event_label' : url,
+          'transport_type' : 'beacon'
+          // 'event_callback': function(){document.location = url;}
+        })
+      }
+    </script>
+    <!--link tracker-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Clark | Kentucky | HEALing Communities Study</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7813ede11b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/pages/cgieck/heal-v2/assets/css/main.css">
+    <link rel="stylesheet" href="/pages/cgieck/heal-v2/assets/css/community.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-default" id="nav">
+  <div class="container-fluid bg-gradient">
+
+    <div class="navbar-header" id="brandHeader">
+      <a class="navbar-brand navbar-left" href="/pages/cgieck/heal-v2/index.html">
+        <img src="/pages/cgieck/heal-v2/assets/images/HEAL-header.jpg" alt="" id="headImg">
+      </a>
+    </div>
+
+    <div class="navbar-header" id="ham">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse navbar-right" id="navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="">
+          <a href="/pages/cgieck/heal-v2/index.html">
+            <span class="fa fa-home"></span>
+          </a>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Find Local Resources <span class="caret"></span></a>
+          <ul class="dropdown-menu" id="local">
+            <!-- <li><a href="/pages/cgieck/heal-v2/find-local-resources.html">Find Local Resources</a></li> -->
+
+            <li class="dropdown-submenu">
+              <a href="#" class="dropdown-submenu-toggle">Kentucky <span class="caret"></span></a>
+              <ul class="dropdown-menu second">
+                <li class="first"><a href="/pages/cgieck/heal-v2/sites/kentucky.html">Kentucky</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/kyboyd.html">Boyd</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/kyboyle.html">Boyle</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/kyclark.html">Clark</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/kyfayette.html">Fayette</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/kyfloyd.html">Floyd</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/kyfranklin.html">Franklin</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/kykenton.html">Kenton</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/kymadison.html">Madison</a></li>
+                
+              </ul>
+            </li> <!--end kentucky-->
+
+            <li class="dropdown-submenu">
+              <a class="dropdown-submenu-toggle" href="#">Massachusetts <span class="caret"></span></a>
+              <ul class="dropdown-menu second">
+                <li class="first"><a href="/pages/cgieck/heal-v2/sites/massachusetts.html">Massachusetts</a></li>
+                
+                  <li class="subNav"><a  href="/pages/cgieck/heal-v2/communities/mabourne-and-sandwich.html">Bourne & Sandwich</a></li>
+                
+                  <li class="subNav"><a  href="/pages/cgieck/heal-v2/communities/mabrockton.html">Brockton</a></li>
+                
+                  <li class="subNav"><a  href="/pages/cgieck/heal-v2/communities/magloucester.html">Gloucester</a></li>
+                
+                  <li class="subNav"><a  href="/pages/cgieck/heal-v2/communities/maholyoke.html">Holyoke</a></li>
+                
+                  <li class="subNav"><a  href="/pages/cgieck/heal-v2/communities/malowell.html">Lowell</a></li>
+                
+                  <li class="subNav"><a  href="/pages/cgieck/heal-v2/communities/maplymouth.html">Plymouth</a></li>
+                
+                  <li class="subNav"><a  href="/pages/cgieck/heal-v2/communities/masalem.html">Salem</a></li>
+                
+                  <li class="subNav"><a  href="/pages/cgieck/heal-v2/communities/mashirley-and-townsend.html">Shirley & Townsend</a></li>
+                
+              </ul>
+            </li> <!---end massachusetts-->
+            <li class="dropdown-submenu">
+              <a class="dropdown-submenu-toggle" href="#">New York <span class="caret"></span></a>
+              <ul class="dropdown-menu second">
+                <li class="first"><a href="/pages/cgieck/heal-v2/sites/new_york.html">New York</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/nycayuga.html">Cayuga</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/nycolumbia.html">Columbia</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/nyerie.html">Erie (Buffalo)</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/nygreene.html">Greene</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/nylewis.html">Lewis</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/nyputnam.html">Putnam</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/nysuffolk.html">Suffolk (Brookhaven)</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/nyulster.html">Ulster</a></li>
+                
+              </ul>
+            </li> <!--end new york -->
+            <li class="dropdown-submenu">
+              <a class="dropdown-submenu-toggle" href="#ohio">Ohio <span class="caret"></span></a>
+              <ul class="dropdown-menu second" id="ohio">
+                <li class="first"><a href="/pages/cgieck/heal-v2/sites/ohio.html">Ohio</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/ohashtabula.html">Ashtabula County</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/ohathens.html">Athens County</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/ohcuyahoga.html">Cuyahoga County</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/ohdarke.html">Darke County</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/ohgreene.html">Greene County</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/ohguernsey.html">Guernsey County</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/ohhamilton.html">Hamilton County</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/ohlucas.html">Lucas County</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/ohscioto.html">Scioto County</a></li>
+                
+              </ul>
+            </li> <!--end ohio -->
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Opioid Use Disorder <span class="caret"></span></a>
+          <ul class="dropdown-menu" id="about">
+            <li><a href="/pages/cgieck/heal-v2/about-oud/oud-addiction.html">Opioid Use Disorder &amp; Addiction</a></li>
+            <li><a href="/pages/cgieck/heal-v2/about-oud/moud.html">Medications for Opioid Use Disorder</a></li>
+            <li><a href="/pages/cgieck/heal-v2/about-oud/naloxone.html">Naloxone</a></li>
+            <li><a href="/pages/cgieck/heal-v2/about-oud/stigma.html">Stigma</a></li>
+          </ul>
+        </li>
+
+        <li class="">
+          <a href="/pages/cgieck/heal-v2/take-action.html">
+            Take Action
+          </a>
+        </li>
+
+        
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+    <div class="jumbotron commJumbo">
+  <div class="container-fluid">
+    <img src="../assets/images/communities/kentucky.jpg" alt="" class="commImg">
+    <h1 class="white commBannerH1">Clark</h1>
+    <h2 class="white commBannerH2">Kentucky</h2>
+  </div>
+</div>
+<div class="container-fluid bg-magenta topGrad" id="commGrad">
+  &nbsp;
+</div>
+    <div class="container comm-content-1">
+  <div class="row">
+  <div class="col-sm-12 col-md-3 px-2 px-md-2 px-lg-0">
+    <h1 class="purple mt-0 text-sm-left">Find Help</h1>
+    <h2 class="coral text-sm-left mt-0">You are not alone.</h2>
+  </div> <!--end column-->
+
+  <div class="col-sm-12 col-md-9 px-2 px-lg-1 pt-lg-5 mt-lg-1">
+    <p class="mb-3 text-sm-left">Help is available for opioid use disorder (OUD) in Clark. Use the map below to find resources near you.</p>
+    
+    <div class="commMapContain my-2">
+      <!-- <img src="/pages/cgieck/heal-v2/assets/images/communities" alt="Map of Clark" class="w-100 commMapImg"> -->
+      <iframe src="https://www.google.com/maps/d/embed?mid=1rGT16rl08rpauMp1vnXNKTFEIjXTAuIe" width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" id="mapEmbed"></iframe>
+    </div>
+    <p class="mb-3 text-sm-left"> You can use the filters on the map to find doctors and other healthcare providers that prescribe medications for opioid use disorder (MOUD, also called MAT), naloxone (also known as NARCAN<sup style="font-weight:600;">®</sup> Nasal Spray), and drug disposal sites. </p>
+
+    
+      
+      <h2 class="purple">Important Notes for Clark:</h2>
+      
+
+    
+      
+      <ul>
+        <li><p class="dk-gray bold mb-1">Naloxone&#58;</p>
+      
+        <ul>
+
+          
+           
+          <li class="mb-1"><a href='http://www.cornerdrugky.com/' onclick="handleOutboundLinkClicks('http://www.cornerdrugky.com/');">Corner Drug</a> and <a href='https://achievingrecoverytogether.org/' target='_blank' onclick="handleOutboundLinkClicks('https://achievingrecoverytogether.org/');">Achieving Recovery Together</a> in Winchester offer naloxone for free when funding is available through <a href='https://chfs.ky.gov/agencies/dbhdid/Documents/KORE%20One%20Page%20Overview.pdf' target='_blank' onclick="handleOutboundLinkClicks('https://chfs.ky.gov/agencies/dbhdid/Documents/KORE%20One%20Page%20Overview.pdf');">KY KORE</a>.</li>
+          
+          
+
+          
+           
+          <li class="mb-1">Naloxone is available at Clark County Health Department to participants of its  <a href='http://www.clarkhealthdept.org/needleexchangeprogram.html' target='_blank' onclick="handleOutboundLinkClicks('http://www.clarkhealthdept.org/needleexchangeprogram.html');">syringe service program</a>.</li>
+          
+          
+
+          
+          
+          
+
+          
+          
+          
+
+          
+          
+          
+
+          
+          
+          
+
+          
+          
+          
+
+          
+          
+          
+          
+        </ul>
+      </li>
+    </ul>
+    
+
+
+    <!-- <div class="panel-group mx-1 my-2" id="naloxone-acc" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="button" data-toggle="collapse" href="#nalOne" aria-expanded="false" aria-controls="nalOne" id="nalheadOne">
+          <h3 class="panel-title d-flex accHead purple">
+            <a>Download printer-friendly lists of these resources:</a>
+            <i class="fas fa-chevron-circle-down purple accChevron"></i>
+          </h3>
+        </div>
+        <div id="nalOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="nalheadOne">
+          <div class="panel-body py-2">
+            <ul class="special">
+              <li class="mb-1"><a href="" target="_blank">Medication for Opioid Use Disorder</a></li>
+              <li class="mb-1"> <a href="" target="_blank">Naloxone</a></li>
+              <li class="mb-1"><a href="" target="_blank">Recovery Support Services</a></li>
+              <li class="mb-1"><a href="" target="_blank">Drug Disposal Sites</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+  </div>
+</div>
+
+</div>
+
+<div class="container comm-content-2">
+  <div class="row">
+  <div class="col-sm-12 col-md-3 px-2 px-md-2 px-lg-0">
+    <h2 class="coral mt-0">Get Medication for Opioid Use Disorder</h2>
+  </div>
+  <div class="col-sm-12 col-md-9 px-2 px-lg-1">
+    <p class="mt-md-1 mb-2 text-sm-left"> Each person has a personal path to recovery from opioid use disorder, and treatment with medication is a medical standard of care. People who stop using opioids often go back to using them if they do not use medication to help them. Stopping and then restarting opioid use increases the chance of dying from an overdose. </p>
+    <ul>
+      <li class="mb-1">If you have a health care provider (doctor, nurse, etc.), ask them about methadone, buprenorphine, and naltrexone. If you do not have a health care provider, use the map above to find a provider near you.</li>
+      <li class="mb-1"><a href="/pages/cgieck/heal-v2/about-oud/moud.html">Learn more about medications for opioid use disorder.</a></li>
+
+      
+
+    </ul>
+  </div>
+</div>
+
+</div>
+
+<div class="container comm-content-3">
+  <div class="row">
+  <div class="col-sm-12 col-md-3 px-2 px-md-2 px-lg-0">
+    <h2 class="coral mt-0">Carry Naloxone</h2>
+  </div>
+  <div class="col-sm-12 col-md-9 px-2 px-lg-1">
+    <p class="mt-md-1 mb-2 text-sm-left">Naloxone (also known as NARCAN<sup style="font-weight:600;">®</sup> Nasal Spray) is a medicine that can save someone’s life if they are overdosing on opioids—whether it’s a prescription opioid, heroin, or a drug containing fentanyl.</p>
+    <p class="bold purple mb-2 text-sm-left">Quick Facts</p>
+    <div class="row d-flex mb-2"  id="commNalox">
+
+      <div class="col-sm-12 col-md-6 box" id="one">
+        <div class="row px-2 py-2 px-md-4 py-md-4">
+          <div class="col-sm-12 col-md-2">
+            <p><span class="orange bold">1</span></p>
+          </div>
+          <div class="col-sm-12 col-md-10">
+            <p>Anyone can give naloxone to a person who may be overdosing, even if you don’t know what they have overdosed on.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 box" id="two">
+        <div class="row px-2 py-2 px-md-4 py-md-4">
+          <div class="col-sm-12 col-md-2">
+            <p><span class="magenta bold">2</span></p>
+          </div>
+          <div class="col-sm-12 col-md-10">
+            <p>You can get it from a pharmacy or local health department without a personal prescription, often for free.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 box" id="three">
+        <div class="row px-2 py-2 px-md-4 py-md-4">
+          <div class="col-sm-12 col-md-2">
+            <p><span class="purple bold">3</span></p>
+          </div>
+          <div class="col-sm-12 col-md-10">
+            <p>It can be used on pregnant women.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 box" id="four">
+        <div class="row px-2 py-2 px-md-4 py-md-4">
+          <div class="col-sm-12 col-md-2">
+            <p><span class="red bold">4</span></p>
+          </div>
+          <div class="col-sm-12 col-md-10">
+            <p>It is safe to keep around children.</p>
+          </div>
+        </div>
+      </div>
+
+    </div> <!--end row-->
+    <ul>
+      
+    
+      <li class="mb-1"><a href="/pages/cgieck/heal-v2/about-oud/naloxone.html">Learn more about naloxone.</a></li>
+    </ul>
+  </div>
+</div>
+
+</div>
+
+<div class="container comm-content-4">
+  <div class="row">
+  <div class="col-sm-12 col-md-3 px-2 px-lg-0">
+    <h2 class="coral mt-0">Dispose of Prescription Opioids</h2>
+  </div>
+  <div class="col-sm-12 col-md-9 px-2 px-lg-1">
+    <p class="mb-2 text-sm-left">It is not safe to share unused medications with others and it is important to remove all leftover prescription pain medication from your home.  Medication take-back drop boxes and events are the best way to safely dispose of prescription and over-the-counter medicines that have passed their expiration date or are no longer needed.</p>
+
+    <button class="red bold mx-2 read-more readMoreTrans" id="read-disposal" data-name="disposal">Read More</button>
+
+    <div class="cs-word-hidden" id="hide-disposal">
+      <p class="mb-2 text-sm-left">Household members should remove all unused medications before their loved one or family member returns home from treatment for OUD.  Before disposing of prescription medications using a drug take-back option, remove all personal information on the label of pill bottles or medicine packaging. All medicines dropped off at the drug disposal sites will be destroyed and discarded.  </p>
+      <p class="mb-2 text-sm-left">View an <a href="https://www.fda.gov/media/111887/download" target="_blank" onclick="handleOutboundLinkClicks('https://www.fda.gov/media/111887/download');">infographic from the FDA</a> for more information about drug disposal.</p>
+      <button class="red bold mx-2 read-less" id="read-disposal-less" data-name="disposal">Read Less...</button>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="container comm-content-5">
+  
+
+<div class="row">
+  <div class="col-sm-12 col-md-3 px-2 px-md-2 px-lg-0">
+    <h2 class="coral mt-0">Discover Additional Local Resources</h2>
+  </div>
+
+  <div class="col-sm-12 col-md-9 px-2 px-lg-1">
+    <ul>
+    
+  
+    
+    
+    <li class="mb-1"><a href='https://chfs.ky.gov/agencies/dbhdid/Pages/kore.aspx' target='_blank' onclick="handleOutboundLinkClicks('https://chfs.ky.gov/agencies/dbhdid/Pages/kore.aspx');">Kentucky KORE</a></li>
+    
+    
+    
+    <li class="mb-1"><a href='https://findhelpnowky.org/' target='_blank' onclick="handleOutboundLinkClicks('https://findhelpnowky.org/');">Find Help Now Kentucky</a></li>
+    
+    
+
+    
+
+
+
+
+      </ul> 
+  </div>
+</div>
+
+
+</div>
+
+<div class="container comm-content-6">
+  <div class="row">
+  <div class="col-sm-12 col-md-12 px-2 px-md-2 px-lg-0">
+    <h1 class="purple mt-0 mb-2 mb-lg-3">Learn About the HEALing Communities Study in Your Area </h1>
+  </div>
+  <div class="col-sm-12 col-md-3 px-2 px-md-2 px-lg-0">
+    <h2 class="coral mt-0">Get Involved in Your Community</h2>
+  </div>
+  <div class="col-sm-12 col-md-9 px-2 px-lg-1">
+    <p class="mb-2 text-sm-left">Clark is taking important steps to address the opioid crisis in your community and across the country by participating in the HEALing Communities Study. <a href="https://heal.nih.gov/research/research-to-practice/healing-communities" target="_blank" onclick="handleOutboundLinkClicks('https://heal.nih.gov/research/research-to-practice/healing-communities');">Learn more about the study</a>, which is being implemented in four states</p>
+    <p class="mb-2 text-sm-left">You can make a difference too.</p>
+
+    <h3 class="purple">Shape Our Communication Materials </h3>
+    <p class="mb-1 text-sm-left">Sign up for our Community Voices Panel to share your feedback on our website and materials.</p>
+    <a href="http://eepurl.com/g9GMFv" target="_blank" onclick="handleOutboundLinkClicks('http://eepurl.com/g9GMFv');"><button class="btn bg-red w-50 w-lg-20">Sign Up</button></a>
+
+    <!-- <h3 class="purple">Participate in Upcoming Events</h3>
+    <ul>
+      <li class="mb-1"><span class="dk-gray bold">Attend an upcoming event:</span></li>
+      <li class="mb-1"><span class="dk-gray bold">Volunteer for an event:</span></li>
+      <li class="mb-1"><span class="dk-gray bold">Download and share event flyer:</span></li>
+      <li class="mb-1"><span class="dk-gray bold">Sign up for our newsletter for updates:</span></li>
+    </ul> -->
+    
+    <h3 class="purple">Share These Resources</h3>
+    <p class="mb-2 text-sm-left">Spread the word. Help others in Clark find help and learn how they can get involved.</p>
+    <ul>
+      <li class="mb-1"><a href="/pages/cgieck/heal-v2/take-action.html">Request campaign materials.</a></li>
+      <li class="mb-1"><span class="dk-gray bold">Share this page on your social platforms.</span>
+        <br>
+        <div class="row mt-1 mb-2" id="social">
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <button class="w-50 w-md-100 w-lg-100 mb-1 btn" id="twit">
+              <span class="white"><i class="fab fa-twitter"></i></span>
+              <span class="white bold">Twitter</span>
+            </button>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <button class="w-50 w-md-100 w-lg-100 mb-1 btn" id="faceb">
+              <span class="white"><i class="fab fa-facebook-f"></i></span>
+              <span class="white bold">Facebook</span>
+            </button>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <button class="w-50 w-md-100 w-lg-100 mb-1 btn" id="print">
+              <span class="white"><i class="fas fa-print"></i></span>
+              <span class="white bold">Print</span>
+            </button>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <button class="w-50 w-md-100 w-lg-100 mb-1 btn" id="more">
+              <span class="white"><i class="fas fa-plus"></i></span>
+              <span class="white bold">More</span>
+            </button>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <h3 class="purple">Stand Up to Stigma</h3>
+    <p class="mb-2 text-sm-left">Stigma is the disapproval of, or discrimination against, a person based on a negative stereotype. Stigma often affects how people with opioid use disorder are treated, making it difficult for them to find jobs, places to live, and medical care. </p>
+    <p><a href="/pages/cgieck/heal-v2/about-oud/stigma.html" target="_blank">Learn more about stigma and how you can help end stigma in your community.</a></p>
+  </div>
+</div>
+</div> <!--end container -->
+
+
+<div class="container-fluid comm-content-7">
+  <div class="container">
+    <div class="row py-5" id="q-row">
+  <div class="col-sm-12 col-md-3 px-1">
+    <h2 class="coral mt-0">Questions about the study in Clark?</h2>
+  </div>
+  <div class="col-sm-12 col-md-9 px-1">
+    <h3 class="purple mt-0">Contact</h3>
+    
+    
+      <p>Jennifer Miles,<br> University of Kentucky<br>   <a href="mailto:Jennifer.miles@uky.edugov">Jennifer.miles@uky.edugov</a> 
+      
+
+    
+
+  </div>
+</div>
+  </div>
+</div>
+
+
+
+    <div class="container-fluid bg-gradient commGrad" style="max-height: 25px;">
+      &nbsp;
+    </div>
+    <div class="container-fluid footer">
+
+  <div class="row text-sm-center" id="arrowRow">
+    <span class="fa-stack fa-2x mx-auto" id="upArrow" data-link="nav">
+      <i class="fas fa-circle coral fa-stack-2x"></i>
+      <i class="far fa-chevron-up fa-stack-1x"></i>
+    </span>
+  </div><!-- end row -->
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 px-2 px-lg-0">
+        <div class="row special">
+          <div class="col-xs-12 col-sm-6 col-md-12">
+            <a href="https://heal.nih.gov/research/research-to-practice/healing-communities" target="external" onclick="captureOutboundLink('https://heal.nih.gov/research/research-to-practice/healing-communities');">
+              <svg id="footImg" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 100 1200 1000"><defs><style>.cls-1{font-size:408.82px;}.cls-1,.cls-2{fill:#fff;font-family:Montserrat-Bold, Montserrat;font-weight:700;}.cls-2{font-size:211.05px;}.cls-3{letter-spacing:-0.08em;}</style></defs><title>NIH HEAL Initiative Logo White</title><text class="cls-1" transform="translate(17 738.16)">HEAL</text><text class="cls-1" transform="translate(17 738.16)">HEAL</text><text class="cls-2" transform="translate(28.38 972.66)">INITI<tspan class="cls-3" x="508.63" y="0">A</tspan><tspan x="654.47" y="0">TIVE</tspan></text><text class="cls-2" transform="translate(28.33 374.76)">NIH</text></svg>
+            </a>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-12">
+            <p class="footText mb-2" id="nih">NIH HEAL Initiative and Helping to End Addiction Long-term are service marks of the U.S. Department of Health and Human&nbsp;Services.</p>
+          </div>
+          <div class="col-xs-12 mb-2 mb-md-0">
+            <p class="footText">
+              <a href="/pages/cgieck/heal-v2/privacy.html">Privacy Policy</a>
+            </p>
+            <p class="footText">
+              <a href="/pages/cgieck/heal-v2/terms.html">Terms of Use</a>
+            </p>
+            <p class="footText">
+              <a href="/pages/cgieck/heal-v2/accessibility.html">Accessibility</a>
+            </p>
+          </div>
+        </div>
+
+      </div><!-- end col -->
+
+      <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 px-2 px-lg-4">
+        <div class="row">
+
+          <div class="col-xs-12 col-md-12 col-lg-12 text-sm-left">
+            <a href="/pages/cgieck/heal-v2/index.html">
+              <p class="bold lg mb-2">Home</p>
+            </a>
+          </div><!-- end col -->
+          
+          <div class="col-xs-12 col-md-12 col-lg-12 text-sm-left">
+            <p class="bold lg footOrng mb-1">Find Local Resources</p>
+          </div><!-- end col -->
+
+          <div class="col-xs-6 col-md-3 col-lg-3 text-sm-left ">
+            <a href="/pages/cgieck/heal-v2/sites/kentucky.html"><p class="bold footNav med">Kentucky</p></a>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/kyboyd.html">Boyd</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/kyboyle.html">Boyle</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/kyclark.html">Clark</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/kyfayette.html">Fayette</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/kyfloyd.html">Floyd</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/kyfranklin.html">Franklin</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/kykenton.html">Kenton</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/kymadison.html">Madison</a></p>
+            
+          </div><!-- end col -->
+          <div class="col-xs-6 col-md-3 col-lg-3 text-sm-left ">
+            <a href="/pages/cgieck/heal-v2/sites/massachusetts.html"><p class="bold footNav med">Massachusetts</p></a>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/mabourne-and-sandwich.html">Bourne & Sandwich</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/mabrockton.html">Brockton</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/magloucester.html">Gloucester</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/maholyoke.html">Holyoke</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/malowell.html">Lowell</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/maplymouth.html">Plymouth</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/masalem.html">Salem</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/mashirley-and-townsend.html">Shirley & Townsend</a></p>
+            
+          </div>
+          <div class="col-xs-6 col-md-3 col-lg-3 text-sm-left ">
+            
+              <a href="/pages/cgieck/heal-v2/sites/new_york.html"><p class="bold footNav med">New York</p></a>
+            </p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/nycayuga.html">Cayuga</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/nycolumbia.html">Columbia</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/nyerie.html">Erie (Buffalo)</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/nygreene.html">Greene</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/nylewis.html">Lewis</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/nyputnam.html">Putnam</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/nysuffolk.html">Suffolk (Brookhaven)</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/nyulster.html">Ulster</a></p>
+            
+          </div>
+          <div class="col-xs-6 col-md-3 col-lg-3 text-sm-left ">
+            <a href="/pages/cgieck/heal-v2/sites/ohio.html"><p class="bold footNav med">Ohio</p></a>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/ohashtabula.html">Ashtabula County</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/ohathens.html">Athens County</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/ohcuyahoga.html">Cuyahoga County</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/ohdarke.html">Darke County</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/ohgreene.html">Greene County</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/ohguernsey.html">Guernsey County</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/ohhamilton.html">Hamilton County</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/ohlucas.html">Lucas County</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/ohscioto.html">Scioto County</a></p>
+            
+          </div>
+        </div><!-- end row -->
+      </div>
+
+      <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 px-2 px-lg-0 pad">
+        <div class="row">
+          <div class="col-xs-12 mt-2 mb-1 mt-md-0"><p class="bold footOrng lg">About Opioid Use Disorder</p></div>
+          <div class="col-xs-12"><a href="/pages/cgieck/heal-v2/about-oud/oud-addiction.html"><p class="bold med">Opioid Use Disorder  &amp; Addiction</p></a></div>
+          <div class="col-xs-12"><a href="/pages/cgieck/heal-v2/about-oud/moud.html"><p class="bold med">Medications for Opioid Use Disorder</p></a></div>
+          <div class="col-xs-12"><a href="/pages/cgieck/heal-v2/about-oud/naloxone.html"><p class="bold med">Naloxone</p></a></div>
+          <div class="col-xs-12"><a href="/pages/cgieck/heal-v2/about-oud/stigma.html"><p class="bold med">Stigma</p></a></div>
+          <div class="col-xs-12 mt-3"><a href="/pages/cgieck/heal-v2/take-action.html"><p class="bold lg">Take Action</p></a></div>
+        </div>
+      </div>
+
+
+    </div><!-- end row -->
+  </div><!-- end container -->
+
+</div><!-- end container-fluid -->
+
+
+    <script src="/pages/cgieck/heal-v2/assets/js/jquery.min.js" type="text/javascript"></script>
+    <script src="/pages/cgieck/heal-v2/assets/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/pages/cgieck/heal-v2/assets/js/custom.js" type="text/javascript"></script>
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f7e07f2f4d88141"></script> 
+  </body>
+  </html>

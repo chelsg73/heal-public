@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153394354-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-153394354-1');
+      // gtag('event', 'Outbound URL');
+    </script>
+    <!-- END GA Code-->
+
+    <!--tracker-->
+    <script>
+    /**
+    * Function that captures a click on an outbound link in Analytics.
+    * This function takes a valid URL string as an argument, and uses that URL string
+    * as the event label. Setting the transport method to 'beacon' lets the hit be sent
+    * using 'navigator.sendBeacon' in browser that support it.
+    */
+          var captureOutboundLink = function(url){
+            gtag('event', 'click', {
+              'event_category' : 'outbound',
+              'event_label' : url,
+              'transport_type' : 'beacon'
+              // 'event_callback': function(){document.location = url;}
+            })
+          }
+
+    </script>
+    <!--link tracker-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>New York | HEALing Communities Study</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7813ede11b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/pages/cgieck/heal-v2/assets/css/main.css">
+    <link rel="stylesheet" href="/pages/cgieck/heal-v2/assets/css/state.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-default" id="nav">
+  <div class="container-fluid bg-gradient">
+
+    <div class="navbar-header" id="brandHeader">
+      <a class="navbar-brand navbar-left" href="/pages/cgieck/heal-v2/index.html">
+        <img src="/pages/cgieck/heal-v2/assets/images/HEAL-header.jpg" alt="" id="headImg">
+      </a>
+    </div>
+
+    <div class="navbar-header" id="ham">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse navbar-right" id="navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="">
+          <a href="/pages/cgieck/heal-v2/index.html">
+            <span class="fa fa-home"></span>
+          </a>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Find Local Resources <span class="caret"></span></a>
+          <ul class="dropdown-menu" id="local">
+            <!-- <li><a href="/pages/cgieck/heal-v2/find-local-resources.html">Find Local Resources</a></li> -->
+
+            <li class="dropdown-submenu">
+              <a href="#" class="dropdown-submenu-toggle">Kentucky <span class="caret"></span></a>
+              <ul class="dropdown-menu second">
+                <li class="first"><a href="/pages/cgieck/heal-v2/sites/kentucky.html">Kentucky</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/kyboyd.html">Boyd</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/kyboyle.html">Boyle</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/kyclark.html">Clark</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/kyfayette.html">Fayette</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/kyfloyd.html">Floyd</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/kyfranklin.html">Franklin</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/kykenton.html">Kenton</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/kymadison.html">Madison</a></li>
+                
+              </ul>
+            </li> <!--end kentucky-->
+
+            <li class="dropdown-submenu">
+              <a class="dropdown-submenu-toggle" href="#">Massachusetts <span class="caret"></span></a>
+              <ul class="dropdown-menu second">
+                <li class="first"><a href="/pages/cgieck/heal-v2/sites/massachusetts.html">Massachusetts</a></li>
+                
+                  <li class="subNav"><a  href="/pages/cgieck/heal-v2/communities/mabourne-and-sandwich.html">Bourne & Sandwich</a></li>
+                
+                  <li class="subNav"><a  href="/pages/cgieck/heal-v2/communities/mabrockton.html">Brockton</a></li>
+                
+                  <li class="subNav"><a  href="/pages/cgieck/heal-v2/communities/magloucester.html">Gloucester</a></li>
+                
+                  <li class="subNav"><a  href="/pages/cgieck/heal-v2/communities/maholyoke.html">Holyoke</a></li>
+                
+                  <li class="subNav"><a  href="/pages/cgieck/heal-v2/communities/malowell.html">Lowell</a></li>
+                
+                  <li class="subNav"><a  href="/pages/cgieck/heal-v2/communities/maplymouth.html">Plymouth</a></li>
+                
+                  <li class="subNav"><a  href="/pages/cgieck/heal-v2/communities/masalem.html">Salem</a></li>
+                
+                  <li class="subNav"><a  href="/pages/cgieck/heal-v2/communities/mashirley-and-townsend.html">Shirley & Townsend</a></li>
+                
+              </ul>
+            </li> <!---end massachusetts-->
+            <li class="dropdown-submenu">
+              <a class="dropdown-submenu-toggle" href="#">New York <span class="caret"></span></a>
+              <ul class="dropdown-menu second">
+                <li class="first"><a href="/pages/cgieck/heal-v2/sites/new_york.html">New York</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/nycayuga.html">Cayuga</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/nycolumbia.html">Columbia</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/nyerie.html">Erie (Buffalo)</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/nygreene.html">Greene</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/nylewis.html">Lewis</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/nyputnam.html">Putnam</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/nysuffolk.html">Suffolk (Brookhaven)</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/nyulster.html">Ulster</a></li>
+                
+              </ul>
+            </li> <!--end new york -->
+            <li class="dropdown-submenu">
+              <a class="dropdown-submenu-toggle" href="#ohio">Ohio <span class="caret"></span></a>
+              <ul class="dropdown-menu second" id="ohio">
+                <li class="first"><a href="/pages/cgieck/heal-v2/sites/ohio.html">Ohio</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/ohashtabula.html">Ashtabula County</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/ohathens.html">Athens County</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/ohcuyahoga.html">Cuyahoga County</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/ohdarke.html">Darke County</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/ohgreene.html">Greene County</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/ohguernsey.html">Guernsey County</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/ohhamilton.html">Hamilton County</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/ohlucas.html">Lucas County</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/ohscioto.html">Scioto County</a></li>
+                
+              </ul>
+            </li> <!--end ohio -->
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Opioid Use Disorder <span class="caret"></span></a>
+          <ul class="dropdown-menu" id="about">
+            <li><a href="/pages/cgieck/heal-v2/about-oud/oud-addiction.html">Opioid Use Disorder &amp; Addiction</a></li>
+            <li><a href="/pages/cgieck/heal-v2/about-oud/moud.html">Medications for Opioid Use Disorder</a></li>
+            <li><a href="/pages/cgieck/heal-v2/about-oud/naloxone.html">Naloxone</a></li>
+            <li><a href="/pages/cgieck/heal-v2/about-oud/stigma.html">Stigma</a></li>
+          </ul>
+        </li>
+
+        <li class="">
+          <a href="/pages/cgieck/heal-v2/take-action.html">
+            Take Action
+          </a>
+        </li>
+
+        
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+    <div class="jumbotron stateJumbo" id="ny">
+  <div class="container-fluid">
+
+    
+      <img src="/pages/cgieck/heal-v2/assets/images/newyork-upper.jpg" alt="" class="stateImg">
+      <h1 class="white stateBannerH1 text-sm-center">New York</h1>
+    
+
+  </div>
+</div>
+<div class="container-fluid bg-magenta topGrad" id="stateGrad">
+  &nbsp;
+</div>
+    <div class="container state-content-1">
+      <div class="row">
+  <div class="col-sm-12 col-md-8 px-2 px-lg-1">
+    <h1 class="purple mt-0 mb-2 text-sm-left">State Snapshot</h1>
+
+    
+      <p class="stateTopText  mb-2">New Yorkers impacted by the opioid overdose epidemic live in rural, suburban, and urban counties that lack resources, service integration, and access to data that could help them turn the tide on the crisis. Columbia University is working hard to bring attention and innovation to these highly affected communities to reverse the alarming increase in opioid overdose deaths they have seen in recent years.</p>
+    
+
+    <button class="red bold mx-2 read-more readMoreTrans" id="read-state" data-name="state">Read More</button>
+
+    
+      <div class="cs-word-hidden" id="hide-state">
+        <p class="mb-2">The HEALing Communities Study (HCS) in New York is combining a scientific approach with community-driven strategies to find the best solutions to curb the opioid overdose epidemic. Residents, local organizations, and government agencies in our communities are joining forces with researchers from multiple disciplines to collectively deploy a range of evidence-based interventions that will reduce overdoses and overdose deaths.</p>
+        <button class="red bold mx-2 read-less" id="read-state-less" data-name="state">Read Less...</button>
+      </div>
+    
+  </div> <!--end column-->
+  
+  <div class="col-sm-12 col-md-4 px-0 mx-2 stateTopQuote">
+    
+      <p class="ml-2  bold med-gray">“It’s not the researchers bringing their approaches and solutions to the community, but it’s about working together with the community to reduce opioid overdose deaths. That’s what people love about the HEALing Communities Study – it's about collective vision, a collective agenda, and collective impact.” </p>
+      <p class=" pl-md-2 pr-md-4 pr-lg-2 stateTopQuoteName text-sm-right">Dr. Nabila El-Bassel,<br>Director, Social Intervention Group,<br>Columbia University</p>
+    
+  </div> <!--end column-->
+
+</div>
+
+    </div>
+    <div class="container state-content-2">
+      <div class="row">
+
+  <div class="col-sm-12 col-md-6 px-md-0 stateFactoidOne stateFact">
+    
+      <p class="py-3 px-3 px-md-2 px-lg-5 py-lg-5 text-sm-center factoidContent">In 2016, there were more than <span class="magenta bold factCallOut">11,000 emergency department visits</span> for opioid overdoses among New York residents. The visit rates were significantly higher among males, young adults aged 18 to 24, Caucasians, and residents living outside of New York&nbsp;City.&nbsp;<span class="tooltipBtn">1<span class="tooltiptext">1. New York State Department of Health. (2018). Opioid annual data report 2018. Retrieved from <a href="https://health.ny.gov/statistics/opioid/data/pdf/nys_opioid_annual_report_2018.pdf" target="_blank" onclick="handleOutboundLinkClicks('https://health.ny.gov/statistics/opioid/data/pdf/nys_opioid_annual_report_2018.pdf');">here</a>.</span></span></p>
+    
+  </div> <!--end factoid 1-->
+
+  <div class="col-sm-12 col-md-6 px-md-0 stateFactoidTwo stateFact">
+    
+      <p class="py-3 px-3 px-md-2 px-lg-5 py-lg-5 text-sm-center factoidContent">The rate of opioid overdose deaths in New York State <span class="magenta bold factCallOut">nearly tripled</span> between 2010 and&nbsp;2017.<span class="tooltipBtn">1,2&nbsp;<span class="tooltiptext">1. New York State Department of Health. (2018). Opioid annual data report 2018. Retrieved from <a href="https://health.ny.gov/statistics/opioid/data/pdf/nys_opioid_annual_report_2018.pdf" target="_blank" onclick="handleOutboundLinkClicks('');">here</a>.<br>2. National Institute on Drug Abuse. (2019). New York opioid summary. Opioid-involved overdose deaths. Retrieved from <a href='https://www.drugabuse.gov/drug-topics/opioids/opioid-summaries-by-state/new-york-opioid-involved-deaths-related-harms' target='_blank' onclick="handleOutboundLinkClicks('https://www.drugabuse.gov/drug-topics/opioids/opioid-summaries-by-state/new-york-opioid-involved-deaths-related-harms');">here</a>.</span></span></p>
+    
+  </div> <!--end factoid 2-->
+
+</div>
+    </div>
+    <div class="container state-content-3">
+      <div class="container stateHope">
+  <div class="row">
+    <div class="col-sm-12 col-md-12 px-2 px-lg-0">
+      <h1 class="purple mt-3 mb-2 mt-lg-0  text-sm-left">Hope in HEALing</h1>
+    </div>
+    <div class="col-sm-12 col-md-3 px-2 px-lg-0">
+      <h2 class="coral mt-0 mb-2  text-sm-left">Our Grant</h2>
+    </div>
+    <div class="col-sm-12 col-md-9 px-2 px-lg-1">
+      <p class="mt-md-1 mb-1 text-sm-left">
+        The HCS will test the impact of the Communities That HEAL (CTH) intervention on opioid overdose deaths and associated outcomes within 16 highly affected communities in New York.
+      </p>
+      <p class="mb-1 text-sm-left">
+        CTH is a community-engaged intervention that provides a comprehensive, data-driven community response plan. The intervention focuses on scaling up evidence-based practices across multiple sectors and includes a collaboration with key community stakeholders, including, but not limited to, County Health and Mental Health commissioners, local law enforcement, people and family members with lived experience, healthcare providers, emergency departments, homeless assistance providers, youth-serving organizations, and elected officials.
+      </p>
+
+      <p class="mb-1 text-sm-left">CTH aims to</p>
+
+      <ul>
+        <li class="ml-2 mb-1 pr-3 px-md-2">Expand navigation services to connect people to care in emergency departments, jails, homeless shelters, and other “hot spot” community settings and to link people at risk of opioid overdose to healthcare settings that provide medication for opioid use disorder;</li>
+        <li class="ml-2 mb-1 pr-3 px-md-2">Increase overdose education and the distribution of naloxone, a drug that reverses opioid overdose;</li>
+        <li class="ml-2 mb-1 pr-3 px-md-2">Reduce drug-related stigma in communities; and</li>
+        <li class="ml-2 mb-1 pr-3 px-md-2">Create systems for tracking opioid use and available services.</li>
+      </ul>
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12 col-md-3 px-2 px-lg-0">
+      <h2 class="coral mt-1 mt-md-0 mb-2  text-sm-left">What We Hope to&nbsp;Learn</h2>
+    </div>
+
+    <div class="col-sm-12 col-md-9 px-2 px-lg-1">
+      <p class="mt-md-1 mb-1  text-sm-left">
+        Our multidisciplinary team of scientists will collaborate with community-based coalitions and other key stakeholders in the 16 selected counties to deploy evidence-based practices that have the greatest impact on reducing opioid overdose deaths and associated outcomes. Together, we will learn what factors promote or impede desired outcomes, how to include community champions and policymakers in the research process, and how existing datasets can be leveraged and used to improve the response of communities to the opioid overdose epidemic.
+      </p>
+    </div>
+    
+  </div>
+</div>
+
+
+    </div>
+    <div class="container state-content-4">
+      <div class="row">
+  <div class="col-sm-12 col-md-3 px-2 px-lg-0">
+    <h2 class="coral text-sm-left mt-0 mb-2">Our Communities in the HEALing Communities Study</h2>
+  </div>
+
+  <div class="col-sm-12 col-md-9 px-2 px-lg-1">
+    <div class="stateMapContain">
+
+      
+        <img src="/pages/cgieck/heal-v2/assets/images/newyork_map.png" alt="Map of Healing Communities in New York" class="w-100 stateMapImg">
+      
+      
+    </div>
+
+
+    <div class="mt-4 mb-2">
+      <h3 class="purple bold mt-0 mb-2">Wave One</h3>
+
+      
+        <div class="row">
+          
+          <div class="col-xs-12 col-sm-6 col-md-3 mb-1">
+            <a class="underline" href="/pages/cgieck/heal-v2/communities/nycayuga.html"><p>Cayuga</p></a>
+          </div>
+          
+          <div class="col-xs-12 col-sm-6 col-md-3 mb-1">
+            <a class="underline" href="/pages/cgieck/heal-v2/communities/nycolumbia.html"><p>Columbia</p></a>
+          </div>
+          
+          <div class="col-xs-12 col-sm-6 col-md-3 mb-1">
+            <a class="underline" href="/pages/cgieck/heal-v2/communities/nyerie.html"><p>Erie (Buffalo)</p></a>
+          </div>
+          
+          <div class="col-xs-12 col-sm-6 col-md-3 mb-1">
+            <a class="underline" href="/pages/cgieck/heal-v2/communities/nygreene.html"><p>Greene</p></a>
+          </div>
+          
+          <div class="col-xs-12 col-sm-6 col-md-3 mb-1">
+            <a class="underline" href="/pages/cgieck/heal-v2/communities/nylewis.html"><p>Lewis</p></a>
+          </div>
+          
+          <div class="col-xs-12 col-sm-6 col-md-3 mb-1">
+            <a class="underline" href="/pages/cgieck/heal-v2/communities/nyputnam.html"><p>Putnam</p></a>
+          </div>
+          
+          <div class="col-xs-12 col-sm-6 col-md-3 mb-1">
+            <a class="underline" href="/pages/cgieck/heal-v2/communities/nysuffolk.html"><p>Suffolk (Brookhaven)</p></a>
+          </div>
+          
+          <div class="col-xs-12 col-sm-6 col-md-3 mb-1">
+            <a class="underline" href="/pages/cgieck/heal-v2/communities/nyulster.html"><p>Ulster</p></a>
+          </div>
+          
+        </div>
+      
+
+    </div>
+    
+    <div class="mt-4 mb-2">
+      <h3 class="purple bold mt-0 mb-2">Wave Two - Coming 2022</h3>
+
+      
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-3 mb-1">
+            <p>Broome</p>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 mb-1">
+            <p>Chautauqua</p>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 mb-1">
+            <p>Cortland</p>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 mb-1">
+            <p>Genesee</p>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 mb-1">
+            <p>Monroe</p>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 mb-1">
+            <p>Orange</p>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 mb-1">
+            <p>Sullivan</p>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 mb-1">
+            <p>Yates</p>
+          </div>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+    </div>
+    <div class="container state-content-5">
+      <div class="row">
+  <div class="col-sm-12 col-md-3 px-2 px-lg-0">
+    <h2 class="coral mt-0 mb-2 mt-md-1 text-sm-left">Study Contact</h2>
+  </div>
+  
+  <div class="col-sm-12 col-md-9 px-2 px-lg-1">
+
+    
+    <div class="">
+      <h3 class="purple bold mt-0">Principal Investigator</h3>
+      <h5 class="fw-normal">Nabila El-Bassel, PhD</h5>
+      <h6 class="">
+        HEALing Communities Study
+      </h6>
+      <p class="">
+        University Professor; Director, Social Intervention Group<br>
+        Columbia University School of Social Work 
+      </p>
+      <a href="mailto:ne5@columbia.edu" class="">ne5@columbia.edu</a>
+    </div>
+    <div class="">
+      <h3 class="purple bold">Project Director</h3>
+      <h5 class="fw-normal">Robin Kerner, PhD</h5>
+      <h6 class="">
+        HEALing Communities Study<br> 
+      </h6>
+      <p class="">
+        Associate Research Scientist, Social Intervention Group<br>
+        Columbia University School of Social Work
+      </p>
+      <a href="mailto:rk2378@columbia.edu" class="">rk2378@columbia.edu</a>
+    </div>
+    
+
+  </div>
+
+
+
+</div>
+
+    </div>
+    <div class="container-fluid stateBottomImg">
+  
+    <img src="/pages/cgieck/heal-v2/assets/images/newyork-lower.jpg" alt="A street with houses and shops" class="w-100">
+  
+</div>
+    <div class="container-fluid footer">
+
+  <div class="row text-sm-center" id="arrowRow">
+    <span class="fa-stack fa-2x mx-auto" id="upArrow" data-link="nav">
+      <i class="fas fa-circle coral fa-stack-2x"></i>
+      <i class="far fa-chevron-up fa-stack-1x"></i>
+    </span>
+  </div><!-- end row -->
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 px-2 px-lg-0">
+        <div class="row special">
+          <div class="col-xs-12 col-sm-6 col-md-12">
+            <a href="https://heal.nih.gov/research/research-to-practice/healing-communities" target="external" onclick="captureOutboundLink('https://heal.nih.gov/research/research-to-practice/healing-communities');">
+              <svg id="footImg" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 100 1200 1000"><defs><style>.cls-1{font-size:408.82px;}.cls-1,.cls-2{fill:#fff;font-family:Montserrat-Bold, Montserrat;font-weight:700;}.cls-2{font-size:211.05px;}.cls-3{letter-spacing:-0.08em;}</style></defs><title>NIH HEAL Initiative Logo White</title><text class="cls-1" transform="translate(17 738.16)">HEAL</text><text class="cls-1" transform="translate(17 738.16)">HEAL</text><text class="cls-2" transform="translate(28.38 972.66)">INITI<tspan class="cls-3" x="508.63" y="0">A</tspan><tspan x="654.47" y="0">TIVE</tspan></text><text class="cls-2" transform="translate(28.33 374.76)">NIH</text></svg>
+            </a>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-12">
+            <p class="footText mb-2" id="nih">NIH HEAL Initiative and Helping to End Addiction Long-term are service marks of the U.S. Department of Health and Human&nbsp;Services.</p>
+          </div>
+          <div class="col-xs-12 mb-2 mb-md-0">
+            <p class="footText">
+              <a href="/pages/cgieck/heal-v2/privacy.html">Privacy Policy</a>
+            </p>
+            <p class="footText">
+              <a href="/pages/cgieck/heal-v2/terms.html">Terms of Use</a>
+            </p>
+            <p class="footText">
+              <a href="/pages/cgieck/heal-v2/accessibility.html">Accessibility</a>
+            </p>
+          </div>
+        </div>
+
+      </div><!-- end col -->
+
+      <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 px-2 px-lg-4">
+        <div class="row">
+
+          <div class="col-xs-12 col-md-12 col-lg-12 text-sm-left">
+            <a href="/pages/cgieck/heal-v2/index.html">
+              <p class="bold lg mb-2">Home</p>
+            </a>
+          </div><!-- end col -->
+          
+          <div class="col-xs-12 col-md-12 col-lg-12 text-sm-left">
+            <p class="bold lg footOrng mb-1">Find Local Resources</p>
+          </div><!-- end col -->
+
+          <div class="col-xs-6 col-md-3 col-lg-3 text-sm-left ">
+            <a href="/pages/cgieck/heal-v2/sites/kentucky.html"><p class="bold footNav med">Kentucky</p></a>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/kyboyd.html">Boyd</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/kyboyle.html">Boyle</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/kyclark.html">Clark</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/kyfayette.html">Fayette</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/kyfloyd.html">Floyd</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/kyfranklin.html">Franklin</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/kykenton.html">Kenton</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/kymadison.html">Madison</a></p>
+            
+          </div><!-- end col -->
+          <div class="col-xs-6 col-md-3 col-lg-3 text-sm-left ">
+            <a href="/pages/cgieck/heal-v2/sites/massachusetts.html"><p class="bold footNav med">Massachusetts</p></a>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/mabourne-and-sandwich.html">Bourne & Sandwich</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/mabrockton.html">Brockton</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/magloucester.html">Gloucester</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/maholyoke.html">Holyoke</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/malowell.html">Lowell</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/maplymouth.html">Plymouth</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/masalem.html">Salem</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/mashirley-and-townsend.html">Shirley & Townsend</a></p>
+            
+          </div>
+          <div class="col-xs-6 col-md-3 col-lg-3 text-sm-left ">
+            
+              <a href="/pages/cgieck/heal-v2/sites/new_york.html"><p class="bold footNav med">New York</p></a>
+            </p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/nycayuga.html">Cayuga</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/nycolumbia.html">Columbia</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/nyerie.html">Erie (Buffalo)</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/nygreene.html">Greene</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/nylewis.html">Lewis</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/nyputnam.html">Putnam</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/nysuffolk.html">Suffolk (Brookhaven)</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/nyulster.html">Ulster</a></p>
+            
+          </div>
+          <div class="col-xs-6 col-md-3 col-lg-3 text-sm-left ">
+            <a href="/pages/cgieck/heal-v2/sites/ohio.html"><p class="bold footNav med">Ohio</p></a>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/ohashtabula.html">Ashtabula County</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/ohathens.html">Athens County</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/ohcuyahoga.html">Cuyahoga County</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/ohdarke.html">Darke County</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/ohgreene.html">Greene County</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/ohguernsey.html">Guernsey County</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/ohhamilton.html">Hamilton County</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/ohlucas.html">Lucas County</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/ohscioto.html">Scioto County</a></p>
+            
+          </div>
+        </div><!-- end row -->
+      </div>
+
+      <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 px-2 px-lg-0 pad">
+        <div class="row">
+          <div class="col-xs-12 mt-2 mb-1 mt-md-0"><p class="bold footOrng lg">About Opioid Use Disorder</p></div>
+          <div class="col-xs-12"><a href="/pages/cgieck/heal-v2/about-oud/oud-addiction.html"><p class="bold med">Opioid Use Disorder  &amp; Addiction</p></a></div>
+          <div class="col-xs-12"><a href="/pages/cgieck/heal-v2/about-oud/moud.html"><p class="bold med">Medications for Opioid Use Disorder</p></a></div>
+          <div class="col-xs-12"><a href="/pages/cgieck/heal-v2/about-oud/naloxone.html"><p class="bold med">Naloxone</p></a></div>
+          <div class="col-xs-12"><a href="/pages/cgieck/heal-v2/about-oud/stigma.html"><p class="bold med">Stigma</p></a></div>
+          <div class="col-xs-12 mt-3"><a href="/pages/cgieck/heal-v2/take-action.html"><p class="bold lg">Take Action</p></a></div>
+        </div>
+      </div>
+
+
+    </div><!-- end row -->
+  </div><!-- end container -->
+
+</div><!-- end container-fluid -->
+
+
+    <script src="/pages/cgieck/heal-v2/assets/js/jquery.min.js" type="text/javascript"></script>
+    <script src="/pages/cgieck/heal-v2/assets/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/pages/cgieck/heal-v2/assets/js/custom.js" type="text/javascript"></script>
+</body>
+</html>
+

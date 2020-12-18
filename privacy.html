@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153394354-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-153394354-1');
+      // gtag('event', 'Outbound URL');
+    </script>
+    <!-- END GA Code-->
+
+    <!--tracker-->
+    <script>
+    /**
+    * Function that captures a click on an outbound link in Analytics.
+    * This function takes a valid URL string as an argument, and uses that URL string
+    * as the event label. Setting the transport method to 'beacon' lets the hit be sent
+    * using 'navigator.sendBeacon' in browser that support it.
+    */
+          var captureOutboundLink = function(url){
+            gtag('event', 'click', {
+              'event_category' : 'outbound',
+              'event_label' : url,
+              'transport_type' : 'beacon'
+              // 'event_callback': function(){document.location = url;}
+            })
+          }
+    </script>
+    <!--link tracker-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>HEALing Communities Study | HEALing Communities Study</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7813ede11b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/pages/cgieck/heal-v2/assets/css/main.css">
+    <link rel="stylesheet" href="/pages/cgieck/heal-v2/assets/css/ancillary.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-default" id="nav">
+  <div class="container-fluid bg-gradient">
+
+    <div class="navbar-header" id="brandHeader">
+      <a class="navbar-brand navbar-left" href="/pages/cgieck/heal-v2/index.html">
+        <img src="/pages/cgieck/heal-v2/assets/images/HEAL-header.jpg" alt="" id="headImg">
+      </a>
+    </div>
+
+    <div class="navbar-header" id="ham">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse navbar-right" id="navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="">
+          <a href="/pages/cgieck/heal-v2/index.html">
+            <span class="fa fa-home"></span>
+          </a>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Find Local Resources <span class="caret"></span></a>
+          <ul class="dropdown-menu" id="local">
+            <!-- <li><a href="/pages/cgieck/heal-v2/find-local-resources.html">Find Local Resources</a></li> -->
+
+            <li class="dropdown-submenu">
+              <a href="#" class="dropdown-submenu-toggle">Kentucky <span class="caret"></span></a>
+              <ul class="dropdown-menu second">
+                <li class="first"><a href="/pages/cgieck/heal-v2/sites/kentucky.html">Kentucky</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/kyboyd.html">Boyd</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/kyboyle.html">Boyle</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/kyclark.html">Clark</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/kyfayette.html">Fayette</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/kyfloyd.html">Floyd</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/kyfranklin.html">Franklin</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/kykenton.html">Kenton</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/kymadison.html">Madison</a></li>
+                
+              </ul>
+            </li> <!--end kentucky-->
+
+            <li class="dropdown-submenu">
+              <a class="dropdown-submenu-toggle" href="#">Massachusetts <span class="caret"></span></a>
+              <ul class="dropdown-menu second">
+                <li class="first"><a href="/pages/cgieck/heal-v2/sites/massachusetts.html">Massachusetts</a></li>
+                
+                  <li class="subNav"><a  href="/pages/cgieck/heal-v2/communities/mabourne-and-sandwich.html">Bourne & Sandwich</a></li>
+                
+                  <li class="subNav"><a  href="/pages/cgieck/heal-v2/communities/mabrockton.html">Brockton</a></li>
+                
+                  <li class="subNav"><a  href="/pages/cgieck/heal-v2/communities/magloucester.html">Gloucester</a></li>
+                
+                  <li class="subNav"><a  href="/pages/cgieck/heal-v2/communities/maholyoke.html">Holyoke</a></li>
+                
+                  <li class="subNav"><a  href="/pages/cgieck/heal-v2/communities/malowell.html">Lowell</a></li>
+                
+                  <li class="subNav"><a  href="/pages/cgieck/heal-v2/communities/maplymouth.html">Plymouth</a></li>
+                
+                  <li class="subNav"><a  href="/pages/cgieck/heal-v2/communities/masalem.html">Salem</a></li>
+                
+                  <li class="subNav"><a  href="/pages/cgieck/heal-v2/communities/mashirley-and-townsend.html">Shirley & Townsend</a></li>
+                
+              </ul>
+            </li> <!---end massachusetts-->
+            <li class="dropdown-submenu">
+              <a class="dropdown-submenu-toggle" href="#">New York <span class="caret"></span></a>
+              <ul class="dropdown-menu second">
+                <li class="first"><a href="/pages/cgieck/heal-v2/sites/new_york.html">New York</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/nycayuga.html">Cayuga</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/nycolumbia.html">Columbia</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/nyerie.html">Erie (Buffalo)</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/nygreene.html">Greene</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/nylewis.html">Lewis</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/nyputnam.html">Putnam</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/nysuffolk.html">Suffolk (Brookhaven)</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/nyulster.html">Ulster</a></li>
+                
+              </ul>
+            </li> <!--end new york -->
+            <li class="dropdown-submenu">
+              <a class="dropdown-submenu-toggle" href="#ohio">Ohio <span class="caret"></span></a>
+              <ul class="dropdown-menu second" id="ohio">
+                <li class="first"><a href="/pages/cgieck/heal-v2/sites/ohio.html">Ohio</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/ohashtabula.html">Ashtabula County</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/ohathens.html">Athens County</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/ohcuyahoga.html">Cuyahoga County</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/ohdarke.html">Darke County</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/ohgreene.html">Greene County</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/ohguernsey.html">Guernsey County</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/ohhamilton.html">Hamilton County</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/ohlucas.html">Lucas County</a></li>
+                
+                  <li class="subNav"><a href="/pages/cgieck/heal-v2/communities/ohscioto.html">Scioto County</a></li>
+                
+              </ul>
+            </li> <!--end ohio -->
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Opioid Use Disorder <span class="caret"></span></a>
+          <ul class="dropdown-menu" id="about">
+            <li><a href="/pages/cgieck/heal-v2/about-oud/oud-addiction.html">Opioid Use Disorder &amp; Addiction</a></li>
+            <li><a href="/pages/cgieck/heal-v2/about-oud/moud.html">Medications for Opioid Use Disorder</a></li>
+            <li><a href="/pages/cgieck/heal-v2/about-oud/naloxone.html">Naloxone</a></li>
+            <li><a href="/pages/cgieck/heal-v2/about-oud/stigma.html">Stigma</a></li>
+          </ul>
+        </li>
+
+        <li class="">
+          <a href="/pages/cgieck/heal-v2/take-action.html">
+            Take Action
+          </a>
+        </li>
+
+        
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+    <div class="jumbotron ancillaryJumbo bg-magenta mb-0">
+      <div class="container-fluid">
+        &nbsp;
+      </div>
+    </div>
+    <div class="container-fluid" id="ancContent">
+      <div class="container ">
+        <div class="row">
+  <div class="col-sm-12 col-md-12 px-2 mb-5">
+
+    <h1 class="mb-2">Privacy Policy</h1>
+
+    <p class="mb-1">RTI International is the Data Coordinating Center ("DCC") for the HEALing Communities Study and is responsible for this website.  As the DCC, RTI will be responsible for study coordination and communication, data management, data science and analysis, and health economic research.</p>
+
+    <p class="mb-1">RTI takes your privacy very seriously and is committed to protecting your personal information. This privacy policy sets out the ways in which any personal information you provide to us is used and kept secure by RTI. This policy applies whenever we collect your personal data (including when you use our website, mobile applications, electronic services, social networking sites, or other digital platforms), so please read this policy carefully. By continuing to use this site, you agree to the terms of this policy. If you do not agree with the terms of this policy, please do not provide us with your personal information or interact with this site.</p>
+
+
+    <h2 class="mb-2">About us</h2>
+
+    <p class="mb-1">RTI International is an independent, nonprofit research institute dedicated to improving the human condition. We combine scientific rigor and technical expertise in social and laboratory sciences, engineering, and international development to deliver solutions to the critical needs of clients worldwide. This privacy policy applies to all companies owned by RTI International.</p>
+
+    <h2 class="mb-2">About this privacy policy</h2>
+
+    <p class="mb-1">This privacy policy explains what information we may collect about you, how we may use it, and the steps we take to ensure that it is kept secure. We also explain your rights with respect to your personal data.</p>
+
+
+    <p class="mb-1">Please note that our website and other digital platforms may contain links to third party websites / digital platforms, which are provided for your convenience. We are only responsible for the privacy practices and security of our own digital platforms. We recommend that you check the privacy and security policies and procedures of each and every other website / digital platform that you visit.</p>
+
+    <h2 class="mb-2">How to contact us about your personal data or this privacy policy</h2>
+
+    <p class="mb-1">If you have any questions about this privacy policy or about your personal data, please email us at <a href="mailto:privacy@rti.org">privacy@rti.org</a> or write to us at the following address:</p>
+
+    <p class="mb-1">
+      Data Protection Officer<br />
+      RTI International<br />
+      P.O. Box 12194<br />
+      Research Triangle Park, NC 27709
+    </p>
+
+    <h2 class="mb-2">Information we collect and what we use it for</h2>
+
+    <p class="mb-1">RTI may collect the following information:	Name,	Address, P.O. Box, City, State, Zip Code, Email Address, Internet Protocol (IP) address (we may infer country from your IP address).</p>
+
+    <p class="mb-1">This information may be collected when you access or use this site, open or respond to our emails, enter your information into a form on this site and submit that form (for the purposes of receiving requested information from the HEALing Communities Study for example), visit any page online that displays our content, and link to the site via a social networking site.</p>
+
+    <p class="mb-1">All information that we collect about you will be recorded, used, and protected by us in accordance with applicable data protection legislation and this privacy policy. We may supplement the information that you provide with other information that we obtain from our dealings with you or which we receive from other organizations, for example, our sponsors and partners.</p>
+
+    <p class="mb-1">We will use your data for the following purposes only:</p>
+
+    <ul class="mb-2">
+      <li class="mb-1">to operate, maintain, and improve the site and our services;</li>
+      <li class="mb-1">to provide information to you about the HEALing Communities Study should you request information and answer any questions you may have;</li>
+      <li class="mb-1">perform analytics and conduct client research;</li>
+      <li class="mb-1">send you reminders, study updates, security alerts, support and administrative messages, service bulletins, and requested information.</li>
+    </ul>
+
+    <p class="mb-1">When we use your data for the above-defined purposes, we may not only collect but also  store the personal information that you provide to us.</p>
+
+    <h2 class="mb-2">Notice to residents of countries outside of the United States of America</h2>
+
+    <p class="mb-1">In order to provide information to you or to otherwise fulfill arrangements that RTI has, we may need to appoint other organizations to carry out some of the data processing activities on our behalf.</p>
+
+    <p class="mb-1">These may include, for example, vendors who provide services for us such as payment processing organizations or fraud prevention; to comply with legal orders and government requests, or as needed to support auditing, compliance, and corporate governance functions; if we are under a legal or regulatory duty to do so; if it is necessary to do so to enforce a contract with you; to lawfully assist the police with the prevention and detection of crime; where such disclosure is necessary to protect the safety or security of any persons, with your consent; and/or otherwise as permitted under applicable law.</p>
+
+    <p class="mb-1">When we enter into these contractual arrangements, we employ Standard Contractual Clauses or Data Processing Agreements depending on whichever is applicable.</p>
+
+    <h2 class="mb-2">Collection of data from outside the United States and California</h2>
+
+    <p class="mb-1">Please note that RTI is headquartered in the United States of America. If you are located outside the United States and provide your data to RTI, we will take proper steps to ensure that your information is protected in accordance with this privacy policy. In addition, RTI recognizes that the European Union (EU) has established a data protection policy effective May 25th, 2018, known as General Data Protection Regulation (GDPR). This regulation applies to countries within the EU and governs the transfer of data outside of the EU. In addition, Switzerland has also established a data protection regime pursuant to the Federal Act on Data Protection (FADP). These regimes restrict companies in the European Economic Area (EEA) and Switzerland (collectively, EEA/CH) from transferring personal data about individuals in the EEA/CH to the United States, unless there is “adequate protection” for such personal data when it is received in the United States. To create such “adequate protection” and allow our vendors to overcome the restriction on international data transfers established by GDPR and the FADP, we adhere to the Privacy Shield Framework as designed by the U.S. Department of Commerce, and the European Commission and Swiss Administration, respectively, to provide companies on both sides of the Atlantic with a mechanism to comply with data protection requirements when transferring personal data from the EU and Switzerland to the United States in support of transatlantic commerce.</p>
+
+    <p class="mb-1">The Privacy Shield program, which is administered by the U.S. Department of Commerce, enables U.S.-based companies to join one in order to benefit from the adequacy determinations. RTI is a nonprofit and not eligible to self-certify to the Department of Commerce and therefore publicly commit to comply with the Framework’s requirements but has voluntarily adopted the principles outlined by the Privacy Shield program.</p>
+
+    <p class="mb-1">If you reside in Canada, you may have the right to be provided with access to Personal Information that we have collected about you and written information about our policies and practices with respect to the transfer of your personal information to vendors outside Canada. To find out more, please email us at <a href="mailto:listen@rti.org">listen@rti.org</a>.</p>
+
+    <p class="mb-1">Pursuant to Section 1798.83 of the California Civil Code, residents of California can obtain certain information about the types of personal information that companies with whom they have an established business relationship have shared with third parties for direct marketing purposes during the preceding calendar year. The law provides that companies must inform consumers about the categories of personal information that have been shared with third parties, the names and addresses of those third parties, and examples of the types of services or products marketed by those third parties. To request a copy of the information disclosure provided by RTI pursuant to Section 1798.83 of the California Civil Code, please contact us at <a href="mailto:listen@rti.org">listen@rti.org</a> or the address stated above. Please allow thirty (30) days for a response.</p>
+
+    <p class="mb-1">In all instances where we disclose your information to third parties, we will ensure that your information is appropriately protected.</p>
+
+    <h2 class="mb-2">Notification of a Disclosure of Your Information</h2>
+
+    <h2 class="mb-2">Cookies</h2>
+
+    <p class="mb-1">In common with many other website operators, we use standard technology called "cookies" on our website. Cookies are small pieces of information that are stored by your browser on your computer's hard drive, and they are used to record how you navigate this website on each visit.</p>
+
+    <h2 class="mb-2">Security of information</h2>
+
+    <p class="mb-1">We take the security of your personal information seriously and use commercially reasonable security procedures to protect personal information you provide to RTI. When you submit your information to us, we use industry standard Secure Sockets Layer (SSL) encryption technology to guard your information. In addition, we have security procedures in place to protect our paper-based systems and computerized databases from loss and misuse and only allow access to them when it is necessary to do so, and then under strict guidelines as to what use may be made of the personal information contained within them.</p>
+
+    <p class="mb-1">Where a password is required to access certain areas of our digital platforms, you are responsible for keeping your password secure and confidential. Please do not share or disclose your password to any other person.</p>
+
+    <p class="mb-1">While RTI believes these security measures to be adequate, no method of transmission over the Internet or method of storage is completely secure. Please know that while we will make every effort keep your information secure, there is still a risk that your personal information could be misappropriated, and we cannot guarantee its absolute security.</p>
+
+    <h2 class="mb-2">Monitoring</h2>
+
+    <p class="mb-1">We do not  monitor users of our site beyond the above-mentioned cookie tracking.</p>
+
+    <h2 class="mb-2">Children's privacy</h2>
+
+    <p class="mb-1">In accordance with applicable regulations, we do not collect data from children and do not intend that any portion of the site will be accessed or used by children under the age of thirteen, and such use is prohibited. This site is designed and intended for use by adults. By using rti.org, you represent that you are at least eighteen years old.</p>
+
+    <h2 class="mb-2">More about your information—your rights</h2>
+
+    <p class="mb-1">You may correct or update your personal information at any time by emailing us at <a href="mailto:privacy@rti.org">privacy@rti.org</a>. Please include your name, address, date of birth, and email address when you contact us as this helps us to ensure that we accept amendments only from the correct person. We encourage you to promptly update your personal information if it changes.</p>
+
+    <p class="mb-1">We will securely retain your information for as long as is reasonably necessary and in accordance with applicable law. If you wish to submit a request that your data be deleted, please write to us at <a href="mailto:privacy@rti.org">privacy@rti.org</a>. You have the right to receive a copy of the personal information that we hold about you. Please write to us at the address above if you wish to exercise this right.</p>
+
+    <h2 class="mb-2">Changes to this privacy policy</h2>
+
+    <p class="mb-1">We aim to meet high standards and so our policies and procedures are constantly under review. From time to time we may change this privacy policy. Accordingly, we recommend that you check this page periodically in order to review the latest version.</p>
+
+    <h2 class="mb-2">Where to make a complaint</h2>
+
+    <p class="mb-1">If you have a complaint regarding any aspect of your personal data or this privacy policy, please write to us at the above address or contact us at <a href="mailto:privacy@rti.org">privacy@rti.org</a>.  For individuals located in the EU, you may contact the appointed Data Protection Authority (DPA) for your country.</p>
+
+    <p class="mb-1">A list of DPAs is available here: <a href="http://ec.europa.eu/newsroom/article29/item-detail.cfm?item_id=612080" target="external">http://ec.europa.eu/newsroom/article29/item-detail.cfm?item_id=612080</a></p>
+
+  </div>
+</div>
+
+
+
+      </div>
+    </div>
+    <div class="container-fluid bg-gradient" style="max-height: 25px;">
+      &nbsp;
+    </div>
+    <div class="container-fluid footer">
+
+  <div class="row text-sm-center" id="arrowRow">
+    <span class="fa-stack fa-2x mx-auto" id="upArrow" data-link="nav">
+      <i class="fas fa-circle coral fa-stack-2x"></i>
+      <i class="far fa-chevron-up fa-stack-1x"></i>
+    </span>
+  </div><!-- end row -->
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 px-2 px-lg-0">
+        <div class="row special">
+          <div class="col-xs-12 col-sm-6 col-md-12">
+            <a href="https://heal.nih.gov/research/research-to-practice/healing-communities" target="external" onclick="captureOutboundLink('https://heal.nih.gov/research/research-to-practice/healing-communities');">
+              <svg id="footImg" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 100 1200 1000"><defs><style>.cls-1{font-size:408.82px;}.cls-1,.cls-2{fill:#fff;font-family:Montserrat-Bold, Montserrat;font-weight:700;}.cls-2{font-size:211.05px;}.cls-3{letter-spacing:-0.08em;}</style></defs><title>NIH HEAL Initiative Logo White</title><text class="cls-1" transform="translate(17 738.16)">HEAL</text><text class="cls-1" transform="translate(17 738.16)">HEAL</text><text class="cls-2" transform="translate(28.38 972.66)">INITI<tspan class="cls-3" x="508.63" y="0">A</tspan><tspan x="654.47" y="0">TIVE</tspan></text><text class="cls-2" transform="translate(28.33 374.76)">NIH</text></svg>
+            </a>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-12">
+            <p class="footText mb-2" id="nih">NIH HEAL Initiative and Helping to End Addiction Long-term are service marks of the U.S. Department of Health and Human&nbsp;Services.</p>
+          </div>
+          <div class="col-xs-12 mb-2 mb-md-0">
+            <p class="footText">
+              <a href="/pages/cgieck/heal-v2/privacy.html">Privacy Policy</a>
+            </p>
+            <p class="footText">
+              <a href="/pages/cgieck/heal-v2/terms.html">Terms of Use</a>
+            </p>
+            <p class="footText">
+              <a href="/pages/cgieck/heal-v2/accessibility.html">Accessibility</a>
+            </p>
+          </div>
+        </div>
+
+      </div><!-- end col -->
+
+      <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 px-2 px-lg-4">
+        <div class="row">
+
+          <div class="col-xs-12 col-md-12 col-lg-12 text-sm-left">
+            <a href="/pages/cgieck/heal-v2/index.html">
+              <p class="bold lg mb-2">Home</p>
+            </a>
+          </div><!-- end col -->
+          
+          <div class="col-xs-12 col-md-12 col-lg-12 text-sm-left">
+            <p class="bold lg footOrng mb-1">Find Local Resources</p>
+          </div><!-- end col -->
+
+          <div class="col-xs-6 col-md-3 col-lg-3 text-sm-left ">
+            <a href="/pages/cgieck/heal-v2/sites/kentucky.html"><p class="bold footNav med">Kentucky</p></a>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/kyboyd.html">Boyd</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/kyboyle.html">Boyle</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/kyclark.html">Clark</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/kyfayette.html">Fayette</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/kyfloyd.html">Floyd</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/kyfranklin.html">Franklin</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/kykenton.html">Kenton</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/kymadison.html">Madison</a></p>
+            
+          </div><!-- end col -->
+          <div class="col-xs-6 col-md-3 col-lg-3 text-sm-left ">
+            <a href="/pages/cgieck/heal-v2/sites/massachusetts.html"><p class="bold footNav med">Massachusetts</p></a>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/mabourne-and-sandwich.html">Bourne & Sandwich</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/mabrockton.html">Brockton</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/magloucester.html">Gloucester</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/maholyoke.html">Holyoke</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/malowell.html">Lowell</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/maplymouth.html">Plymouth</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/masalem.html">Salem</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/mashirley-and-townsend.html">Shirley & Townsend</a></p>
+            
+          </div>
+          <div class="col-xs-6 col-md-3 col-lg-3 text-sm-left ">
+            
+              <a href="/pages/cgieck/heal-v2/sites/new_york.html"><p class="bold footNav med">New York</p></a>
+            </p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/nycayuga.html">Cayuga</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/nycolumbia.html">Columbia</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/nyerie.html">Erie (Buffalo)</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/nygreene.html">Greene</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/nylewis.html">Lewis</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/nyputnam.html">Putnam</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/nysuffolk.html">Suffolk (Brookhaven)</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/nyulster.html">Ulster</a></p>
+            
+          </div>
+          <div class="col-xs-6 col-md-3 col-lg-3 text-sm-left ">
+            <a href="/pages/cgieck/heal-v2/sites/ohio.html"><p class="bold footNav med">Ohio</p></a>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/ohashtabula.html">Ashtabula County</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/ohathens.html">Athens County</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/ohcuyahoga.html">Cuyahoga County</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/ohdarke.html">Darke County</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/ohgreene.html">Greene County</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/ohguernsey.html">Guernsey County</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/ohhamilton.html">Hamilton County</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/ohlucas.html">Lucas County</a></p>
+            
+              <p class="footText"><a href="/pages/cgieck/heal-v2/communities/ohscioto.html">Scioto County</a></p>
+            
+          </div>
+        </div><!-- end row -->
+      </div>
+
+      <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 px-2 px-lg-0 pad">
+        <div class="row">
+          <div class="col-xs-12 mt-2 mb-1 mt-md-0"><p class="bold footOrng lg">About Opioid Use Disorder</p></div>
+          <div class="col-xs-12"><a href="/pages/cgieck/heal-v2/about-oud/oud-addiction.html"><p class="bold med">Opioid Use Disorder  &amp; Addiction</p></a></div>
+          <div class="col-xs-12"><a href="/pages/cgieck/heal-v2/about-oud/moud.html"><p class="bold med">Medications for Opioid Use Disorder</p></a></div>
+          <div class="col-xs-12"><a href="/pages/cgieck/heal-v2/about-oud/naloxone.html"><p class="bold med">Naloxone</p></a></div>
+          <div class="col-xs-12"><a href="/pages/cgieck/heal-v2/about-oud/stigma.html"><p class="bold med">Stigma</p></a></div>
+          <div class="col-xs-12 mt-3"><a href="/pages/cgieck/heal-v2/take-action.html"><p class="bold lg">Take Action</p></a></div>
+        </div>
+      </div>
+
+
+    </div><!-- end row -->
+  </div><!-- end container -->
+
+</div><!-- end container-fluid -->
+
+
+    <script src="/pages/cgieck/heal-v2/assets/js/jquery.min.js" type="text/javascript"></script>
+    <script src="/pages/cgieck/heal-v2/assets/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/pages/cgieck/heal-v2/assets/js/custom.js" type="text/javascript"></script>
+</body>
+</html>
+
